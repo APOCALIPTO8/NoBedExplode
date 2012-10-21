@@ -33,7 +33,7 @@ public class NoBedExplode extends JavaPlugin implements Listener {
 		    			{
 
 		    			    Block block = e.getClickedBlock();
-		    				if(((org.bukkit.block.Block) block).getLocation().getWorld().getName().contains("Nether") || ((org.bukkit.block.Block) block).getLocation().getWorld().getName().contains("nether"))
+		    				if(((org.bukkit.block.Block) block).getLocation().getWorld().getName().toLowerCase().contains("nether"))
 		    				{
 		    					p.sendMessage(ChatColor.YELLOW+"You are not allowed to use a bed in the Nether!");
 		    					e.setCancelled(true);
