@@ -18,17 +18,9 @@ public class NoBedExplode extends JavaPlugin implements Listener {
 			public NoBedExplode plugin;
 			public final Logger logger = Logger.getLogger("Minecraft");
 			@Override
-			public void onDisable() 	
-			{
-				PluginDescriptionFile pdfFile = this.getDescription();
-				this.logger.info(pdfFile.getName() + " has been disabled.");
-			}
-			@Override
 			public void onEnable() 
 			{
 				getServer().getPluginManager().registerEvents(this, this);
-				PluginDescriptionFile pdfFile = this.getDescription();
-				this.logger.info(pdfFile.getName() +" has been enabled.");
 			}
 			/* Begin useful code */
 		    @EventHandler
